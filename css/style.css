@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.blue-bg {
+  background: linear-gradient(305deg, #011025 0%, #021f49 50%, #012b66 100%);
+}
