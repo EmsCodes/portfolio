@@ -1,7 +1,11 @@
 header {
 	display: flex;
+	justify-content: space-between;
+	width: 85%;
+	margin: 0 auto;
 	.logo {
-		width: 65px;
+		width: 55px;
+		margin-top: 20px;
 	}
 	.social-links {
 		display: flex;
