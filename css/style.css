@@ -1,8 +1,108 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "roboto-condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.introduction {
+  color: #f7f6f5;
+}
+
+h1 {
+  font-family: "proxima-nova-extra-condensed", sans-serif;
+  font-size: 2.2em;
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .logo {
+  width: 65px;
+}
+
+header .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .blue-bg {
-  background: linear-gradient(305deg, #011025 0%, #021f49 50%, #012b66 100%);
+  background: linear-gradient(300deg, #011633 0%, #012b66 100%);
+}
+
+.introduction {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.introduction p:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 85%;
+}
+
+.introduction p:nth-child(1):before,
+.introduction p:nth-child(1):after {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-bottom: 0.5px solid #f0f0f0;
+  margin: auto;
+}
+
+.introduction p:nth-child(1):before {
+  margin-right: 10px;
+}
+
+.introduction p:nth-child(1)::after {
+  margin-left: 10px;
+}
+
+.introduction .introduction__portrait {
+  width: 80%;
+  margin-left: 15%;
+  position: relative;
+  z-index: 5;
+}
+
+.introduction .introduction__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.introduction::before {
+  content: "";
+  position: absolute;
+  background: url("/images/pattern/hexagon-pattern.png");
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 50%;
 }
