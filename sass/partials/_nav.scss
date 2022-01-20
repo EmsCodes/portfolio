@@ -1,12 +1,62 @@
-.main-nav {
-	ul,
-	.social-links {
+.menu {
+	padding-right: 7.5%;
+
+	.menu__main-nav {
 		display: none;
+		animation: fade-out 0.5s;
 	}
 
-	.burger-btn {
+	.menu__burger-btn {
+		position: relative;
+		z-index: 5;
 		background: none;
 		border: none;
 		margin-top: 30px;
+	}
+
+	// mobile/tablet navigation menu
+	.active {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 75vh;
+		z-index: 2;
+		background: $peach-linear-gradient;
+		animation: slide-in 0.5s;
+	}
+	ul {
+		border: 1px solid green;
+		margin-top: 35%;
+		a {
+			text-decoration: none;
+			color: $dark-blue;
+			font-family: $heading-font;
+		}
+	}
+	li {
+		list-style-type: none;
+	}
+	.menu__social-links {
+		display: flex;
+	}
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+@keyframes fade-out {
+	from {
+		opacity: 100%;
+	}
+	to {
+		opacity: 0%;
 	}
 }

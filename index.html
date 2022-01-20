@@ -24,53 +24,60 @@
 			<a href="index.html"
 				><img class="logo" src="images/Logo-white.png" alt="EMS logo"
 			/></a>
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#about">About me</a></li>
-					<li><a href="#projects">Contact</a></li>
-				</ul>
-				<div class="social-links" aria-label="social links">
-					<div class="social-links__github">
-						<a href="https://github.com/EmsCodes">
-							<p class="sr-only">GitHub account link</p>
-							<img
-								class="social-links--styling"
-								src="/images/icons/github-icon.svg"
-								alt="github icon"
-							/>
-						</a>
-					</div>
-					<div class="social-links__linkedin">
-						<a href="https://www.linkedin.com/in/endre-makra-stenkl%C3%B8v/">
-							<p class="sr-only">LinkedIn account link</p>
-							<img
-								class="social-links--styling"
-								src="/images/icons/linkedin-icon.svg"
-								alt="linkedIn icon"
-							/>
-						</a>
-					</div>
-					<div class="social-links__contact">
-						<a href="mailto:endrestk@gmail.com">
-							<p class="sr-only">Contact link</p>
-							<img
-								class="social-links--styling"
-								src="/images/icons/contact-icon.svg"
-								alt="mail icon"
-							/>
-						</a>
-					</div>
-				</div>
-        <button class="burger-btn" aria-label="burger menu">
+      <div class="menu">
+        <button class="menu__burger-btn" aria-label="burger menu">
           <img class="burger-icon"src="/images/icons/burger-menu.svg" alt="burger-menu" aria-hidden="true">
         </button>
-			</nav>
+        <nav class="menu__main-nav">
+          <ul>
+            <li><a href="#projects">0.Projects</a></li>
+            <li><a href="#about">1.About me</a></li>
+            <li><a href="#projects">2.Contact</a></li>
+          </ul>
+          <div class="menu__social-links" aria-label="social links">
+            <div class="social-links__github">
+              <a href="https://github.com/EmsCodes">
+                <p class="sr-only">GitHub account link</p>
+                <img
+                  class="social-links--styling"
+                  src="/images/icons/github-icon.svg"
+                  alt="github icon"
+                  aria-hidden="true"
+                />
+              </a>
+            </div>
+            <div class="social-links__linkedin">
+              <a href="https://www.linkedin.com/in/endre-makra-stenkl%C3%B8v/">
+                <p class="sr-only">LinkedIn account link</p>
+                <img
+                  class="social-links--styling"
+                  src="/images/icons/linkedin-icon.svg"
+                  alt="linkedIn icon"
+                  aria-hidden="true"
+                />
+              </a>
+            </div>
+            <div class="social-links__contact">
+              <a href="mailto:endrestk@gmail.com">
+                <p class="sr-only">Contact link</p>
+                <img
+                  class="social-links--styling"
+                  src="/images/icons/contact-icon.svg"
+                  alt="mail icon"
+                  aria-hidden="true"
+
+                />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
 		</header>
 		<main>
       <!-- Introduction -->
 			<section class="introduction">
-				<p><span class="introduction--span">Hello, world!</span>My name is</p>
+        <div class="introduction__text">
+          <p><span class="introduction--span">Hello, world! </span> My name is</p>
 				<h1>Endre Makra-Stenkløv</h1>
 				<div class="introduction__description">
 					<img
@@ -82,6 +89,7 @@
 						with focus on design and user-friendly solutions.
 					</p>
 				</div>
+        </div>
         <img
           class="introduction__portrait"
           src="/images/coloured-portrait.png"

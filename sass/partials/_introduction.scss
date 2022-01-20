@@ -8,13 +8,17 @@
 
 .introduction {
 	position: relative;
+	width: 100%;
 	// makes portrait go all the way to the bottom
 	display: flex;
 	flex-direction: column;
+	margin-top: 20%;
+
 	p:nth-child(1) {
+		margin: 0 auto;
 		display: flex;
 		flex-direction: row;
-		width: 85%;
+		width: 90%;
 	}
 
 	p:nth-child(1):before,
@@ -34,7 +38,12 @@
 		width: 80%;
 		margin-left: 15%;
 		position: relative;
-		z-index: 5;
+		z-index: 1;
+		margin-top: 30%;
+	}
+	.introduction__text {
+		width: 90%;
+		margin: 0 auto;
 	}
 	.introduction__description {
 		display: flex;

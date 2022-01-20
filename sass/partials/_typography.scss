@@ -6,6 +6,16 @@ body {
 
 .introduction {
 	color: $white;
+
+	h1 {
+		text-align: center;
+	}
+	p:nth-child(1) {
+		text-align: center;
+	}
+	.introduction--span {
+		margin-right: 5px;
+	}
 }
 
 h1 {

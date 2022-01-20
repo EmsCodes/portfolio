@@ -1,5 +1,5 @@
-const menuBtn = document.querySelector(".burger-btn");
+import { dropDownMenu } from "./functions/functions.js";
 
-menuBtn.onclick = function () {
-	console.log("hello!");
-};
+const menuBtn = document.querySelector(".menu__burger-btn");
+
+menuBtn.addEventListener("click", dropDownMenu);
