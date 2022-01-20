@@ -8,7 +8,6 @@
 
 .introduction {
 	position: relative;
-	width: 100%;
 	// makes portrait go all the way to the bottom
 	display: flex;
 	flex-direction: column;
@@ -39,14 +38,19 @@
 		margin-left: 15%;
 		position: relative;
 		z-index: 1;
-		margin-top: 30%;
+		margin-top: 10%;
 	}
 	.introduction__text {
-		width: 90%;
 		margin: 0 auto;
+		width: 90%;
 	}
 	.introduction__description {
 		display: flex;
+		width: 90%;
+		margin: 0 auto;
+		p {
+			margin-left: 10px;
+		}
 	}
 	&::before {
 		content: "";

@@ -26,21 +26,34 @@
 		z-index: 2;
 		background: $peach-linear-gradient;
 		animation: slide-in 0.5s;
+		box-shadow: 0px 5px 15px $dark-blue;
 	}
 	ul {
-		border: 1px solid green;
-		margin-top: 35%;
+		padding: 0;
+		width: 50%;
+		margin: 0 auto;
+		margin-top: 30%;
+		transform: translateX(25%);
 		a {
 			text-decoration: none;
 			color: $dark-blue;
 			font-family: $heading-font;
+			font-size: 1.8em;
 		}
 	}
 	li {
 		list-style-type: none;
+		margin-bottom: 20px;
 	}
 	.menu__social-links {
 		display: flex;
+		justify-content: space-between;
+		width: 45%;
+		margin: 0 auto;
+		margin-top: 50px;
+		img {
+			width: 50px;
+		}
 	}
 }
 
