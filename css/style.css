@@ -44,6 +44,23 @@ h2 {
   color: #ff7a72;
 }
 
+.projects__description h3 {
+  font-weight: 300;
+  font-size: 2em;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.projects__description .projects__description--peach:first-of-type {
+  margin-top: 0;
+}
+
+.projects__description .projects__description--peach {
+  margin-top: 0;
+  color: #ff7a72;
+  font-family: "proxima-nova-extra-condensed", sans-serif;
+}
+
 .menu {
   padding-right: 7.5%;
 }
@@ -159,6 +176,7 @@ h2 {
 body {
   margin: 0;
   padding: 0;
+  background-color: #f7f6f5;
 }
 
 h2::before,
@@ -188,7 +206,95 @@ h2 {
   margin-top: 10px;
 }
 
-.projects .project__image {
+.projects__display {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.projects__display a {
+  position: relative;
+  text-decoration: none;
+  z-index: 5;
+}
+
+.projects__display .project__info,
+.projects__display p,
+.projects__display h3 {
+  color: #f7f6f5;
+}
+
+.projects__display .projects__display--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+}
+
+.projects__display .projects__description {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  background: url("/images/bryllup.jpg");
+  background-size: contain;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+}
+
+.projects__display .projects__description::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: #012b66;
+  opacity: 90%;
+  z-index: 2;
+}
+
+.projects__display .projects__description--flexible {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.projects__display .projects__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.projects__display .projects__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7.5px;
+}
+
+.projects__display .projects__display--technologies {
+  margin-right: 25px;
+}
+
+.projects__display .projects__icons--styling {
+  width: 45px;
+}
+
+.projects__display .projects__image {
   display: none;
 }
 
@@ -273,6 +379,7 @@ header .social-links {
 .introduction .introduction__text {
   margin: 0 auto;
   width: 90%;
+  max-width: 500px;
 }
 
 .introduction .introduction__description {

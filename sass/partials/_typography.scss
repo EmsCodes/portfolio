@@ -36,3 +36,20 @@ h2 {
 		color: $peach;
 	}
 }
+
+.projects__description {
+	h3 {
+		font-weight: 300;
+		font-size: 2em;
+		margin: 0;
+		text-transform: capitalize;
+	}
+	.projects__description--peach:first-of-type {
+		margin-top: 0;
+	}
+	.projects__description--peach {
+		margin-top: 0;
+		color: $peach;
+		font-family: $heading-font;
+	}
+}

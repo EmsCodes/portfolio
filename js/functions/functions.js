@@ -10,3 +10,11 @@ export function dropDownMenu() {
 		logo.src = "images/Logo-white.png";
 	}
 }
+
+// closes the menu when clicking a link
+
+const navLinks = document.querySelectorAll(".menu__main-nav li a");
+
+navLinks.forEach((link) => {
+	link.addEventListener("click", dropDownMenu);
+});

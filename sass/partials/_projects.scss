@@ -20,8 +20,65 @@ h2 {
 	margin-top: 10px;
 }
 
-.projects {
-	.project__image {
+.projects__display {
+	width: 90%;
+	margin: 0 auto;
+
+	a {
+		position: relative;
+		text-decoration: none;
+		z-index: 5;
+	}
+	.project__info,
+	p,
+	h3 {
+		color: $white;
+	}
+	.projects__display--wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+	}
+	.projects__description {
+		margin-right: 10px;
+		margin-bottom: 10px;
+		position: relative;
+		background: url("/images/bryllup.jpg");
+		background-size: contain;
+		padding: 25px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 300px;
+		height: 300px;
+	}
+	.projects__description::before {
+		position: absolute;
+		content: "";
+		inset: 0;
+		background: $main-blue;
+		opacity: 90%;
+		z-index: 2;
+	}
+	.projects__description--flexible {
+		flex-grow: 1;
+	}
+	.projects__info {
+		display: flex;
+		justify-content: space-between;
+		flex-shrink: 1;
+	}
+	.projects__icons {
+		display: flex;
+		gap: 7.5px;
+	}
+	.projects__display--technologies {
+		margin-right: 25px;
+	}
+	.projects__icons--styling {
+		width: 45px;
+	}
+	.projects__image {
 		display: none;
 	}
 }
