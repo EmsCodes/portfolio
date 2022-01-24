@@ -3,7 +3,6 @@
 
 	.menu__main-nav {
 		display: none;
-		animation: fade-out 0.5s;
 	}
 
 	.menu__burger-btn {
@@ -63,13 +62,5 @@
 	}
 	to {
 		transform: translateX(0%);
-	}
-}
-@keyframes fade-out {
-	from {
-		opacity: 100%;
-	}
-	to {
-		opacity: 0%;
 	}
 }

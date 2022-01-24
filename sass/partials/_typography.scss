@@ -19,6 +19,27 @@ h2 {
 	font-size: 2.2em;
 	font-weight: 500;
 }
+h2::before,
+h2::after {
+	content: "";
+	flex: 1;
+	border-bottom: 0.5px solid $dark-blue;
+	margin: auto;
+}
+
+h2::before {
+	margin-right: 10px;
+}
+h2::after {
+	margin-left: 10px;
+}
+
+h2 {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 35px;
+}
 
 .introduction {
 	color: $white;
@@ -37,10 +58,10 @@ h2 {
 	}
 }
 
-.projects__description {
+.projects__card {
 	h3 {
 		font-weight: 300;
-		font-size: 2em;
+		font-size: 1.5em;
 		margin: 0;
 		text-transform: capitalize;
 	}

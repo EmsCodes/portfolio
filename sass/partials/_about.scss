@@ -1,0 +1,21 @@
+.about {
+	width: 90%;
+	margin: 0 auto;
+
+	.about__images {
+		display: flex;
+		flex-direction: column;
+	}
+	.about_images--collection {
+		width: 100%;
+		height: auto;
+		margin: 25px 0;
+	}
+	.about__images--icon {
+		width: 50px;
+		margin: 0 auto;
+	}
+	.facts__img {
+		display: none;
+	}
+}

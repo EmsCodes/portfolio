@@ -25,6 +25,33 @@ h2 {
   font-weight: 500;
 }
 
+h2::before,
+h2::after {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-bottom: 0.5px solid #001333;
+  margin: auto;
+}
+
+h2::before {
+  margin-right: 10px;
+}
+
+h2::after {
+  margin-left: 10px;
+}
+
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
 .introduction {
   color: #f7f6f5;
 }
@@ -44,18 +71,18 @@ h2 {
   color: #ff7a72;
 }
 
-.projects__description h3 {
+.projects__card h3 {
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0;
   text-transform: capitalize;
 }
 
-.projects__description .projects__description--peach:first-of-type {
+.projects__card .projects__description--peach:first-of-type {
   margin-top: 0;
 }
 
-.projects__description .projects__description--peach {
+.projects__card .projects__description--peach {
   margin-top: 0;
   color: #ff7a72;
   font-family: "proxima-nova-extra-condensed", sans-serif;
@@ -67,8 +94,6 @@ h2 {
 
 .menu .menu__main-nav {
   display: none;
-  -webkit-animation: fade-out 0.5s;
-          animation: fade-out 0.5s;
 }
 
 .menu .menu__burger-btn {
@@ -155,60 +180,23 @@ h2 {
   }
 }
 
-@-webkit-keyframes fade-out {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
   background-color: #f7f6f5;
 }
 
-h2::before,
-h2::after {
-  content: "";
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  border-bottom: 0.5px solid #001333;
-  margin: auto;
-}
-
-h2::before {
-  margin-right: 10px;
-}
-
-h2::after {
-  margin-left: 10px;
-}
-
-h2 {
+.projects__display {
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   margin: 0 auto;
-  margin-top: 10px;
-}
-
-.projects__display {
-  width: 90%;
-  margin: 0 auto;
+  margin-top: 25px;
 }
 
 .projects__display a {
@@ -223,20 +211,7 @@ h2 {
   color: #f7f6f5;
 }
 
-.projects__display .projects__display--wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  width: 100%;
-}
-
-.projects__display .projects__description {
-  margin-right: 10px;
-  margin-bottom: 10px;
+.projects__display .projects__card {
   position: relative;
   background: url("/images/bryllup.jpg");
   background-size: contain;
@@ -248,12 +223,12 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  max-width: 300px;
-  height: 300px;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-.projects__display .projects__description::before {
+.projects__display .projects__card::before {
   position: absolute;
   content: "";
   inset: 0;
@@ -275,8 +250,6 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
 }
 
 .projects__display .projects__icons {
@@ -295,6 +268,47 @@ h2 {
 }
 
 .projects__display .projects__image {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
+  .projects__display {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .projects__display .projects__card {
+    width: 38%;
+  }
+}
+
+.about {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about .about__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .about_images--collection {
+  width: 100%;
+  height: auto;
+  margin: 25px 0;
+}
+
+.about .about__images--icon {
+  width: 50px;
+  margin: 0 auto;
+}
+
+.about .facts__img {
   display: none;
 }
 
