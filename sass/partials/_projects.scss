@@ -30,11 +30,19 @@
 		opacity: 90%;
 	}
 	.projects__description--flexible {
+		margin-bottom: 75px;
 		flex-grow: 1;
 	}
 	.projects__info {
+		position: absolute;
+		bottom: 5%;
+		width: 85%;
+		margin-top: 25px;
 		display: flex;
 		justify-content: space-between;
+	}
+	.projects__icons--styling {
+		transform: translateY(-25%);
 	}
 	.projects__icons {
 		display: flex;
@@ -53,8 +61,20 @@
 
 @media screen and (min-width: 650px) {
 	.projects__display {
+		width: 90%;
+		gap: 20px;
+		justify-content: center;
 		.projects__card {
+			width: 100%;
+			margin-bottom: 0px;
+		}
+		.projects__project {
 			width: 45%;
+			display: flex;
+			flex-direction: row;
+		}
+		.projects__icons--styling {
+			transform: translateY(-0%);
 		}
 	}
 }

@@ -1,10 +1,6 @@
 .menu {
 	padding-right: 7.5%;
 
-	.menu__main-nav {
-		display: none;
-	}
-
 	.menu__burger-btn {
 		position: relative;
 		z-index: 5;
@@ -14,9 +10,11 @@
 	}
 
 	// mobile/tablet navigation menu
-	.active {
-		display: block;
+	.menu__main-nav {
 		position: absolute;
+		transform: translateX(100%);
+		width: 100%;
+		transition: all 0.3s ease-in-out;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -24,9 +22,13 @@
 		height: 75vh;
 		z-index: 2;
 		background: $peach-linear-gradient;
-		animation: slide-in 0.5s;
 		box-shadow: 0px 5px 15px $dark-blue;
 	}
+	.active {
+		transform: translateX(0%);
+		transition: all 0.3s ease-in-out;
+	}
+
 	ul {
 		padding: 0;
 		width: 50%;
@@ -53,14 +55,5 @@
 		img {
 			width: 50px;
 		}
-	}
-}
-
-@keyframes slide-in {
-	from {
-		transform: translateX(100%);
-	}
-	to {
-		transform: translateX(0%);
 	}
 }
