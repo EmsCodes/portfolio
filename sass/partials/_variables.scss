@@ -10,6 +10,12 @@ $peach-linear-gradient: linear-gradient(
 	rgba(183, 62, 55, 100%)
 );
 
+$blue-linear-gradient: linear-gradient(
+	300deg,
+	rgba(1, 22, 51, 1) 0%,
+	rgba(1, 43, 102, 1) 100%
+);
+
 // FONTS
 $body-text: "roboto-condensed", sans-serif;
 $heading-font: "proxima-nova-extra-condensed", sans-serif;

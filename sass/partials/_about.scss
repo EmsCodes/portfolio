@@ -1,21 +1,73 @@
 .about {
-	width: 90%;
-	margin: 0 auto;
-
 	.about__images {
 		display: flex;
 		flex-direction: column;
 	}
-	.about_images--collection {
-		width: 100%;
-		height: auto;
-		margin: 25px 0;
+	.about__images--collection {
+		width: 85%;
+		max-width: 400px;
+		margin: 0 auto;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	.about__images--horisontal {
+		display: none;
 	}
 	.about__images--icon {
 		width: 50px;
 		margin: 0 auto;
 	}
+	.facts {
+		background: $blue-linear-gradient;
+		margin-top: 35px;
+
+		.facts--wrapper {
+			position: relative;
+			width: 100%;
+		}
+
+		.facts--wrapper::before {
+			content: "";
+			position: absolute;
+			background: url("/images/pattern/hexagon-pattern.png");
+			background-size: cover;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 50%;
+		}
+	}
 	.facts__img {
 		display: none;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.about {
+		.about__images--collection {
+			display: none;
+		}
+		.about__images--horisontal {
+			display: block;
+			width: 100%;
+			margin-top: 35px;
+			margin-bottom: 35px;
+		}
+		.about__images--icon {
+			margin-top: 25px;
+			margin-bottom: 25px;
+			width: 55px;
+		}
+		.facts {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+		.facts__img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: 35% center;
+		}
 	}
 }

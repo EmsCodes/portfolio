@@ -1,9 +1,5 @@
 .blue-bg {
-	background: linear-gradient(
-		300deg,
-		rgba(1, 22, 51, 1) 0%,
-		rgba(1, 43, 102, 1) 100%
-	);
+	background: $blue-linear-gradient;
 }
 
 .introduction {
