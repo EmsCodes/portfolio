@@ -54,7 +54,7 @@
 @media screen and (min-width: 650px) {
 	.projects__display {
 		.projects__card {
-			width: 40%;
+			width: 45%;
 		}
 	}
 }
@@ -62,18 +62,18 @@
 @media screen and (min-width: 1000px) {
 	.projects__display {
 		flex-direction: column;
-		.projects__project {
-			width: 90vw;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-evenly;
-		}
+		row-gap: 50px;
 
 		.projects__card {
 			display: flex;
 			flex-direction: column;
 			width: 100%;
 			margin-bottom: 0;
+		}
+		.projects__project {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
 		}
 		.projects__image {
 			display: block;

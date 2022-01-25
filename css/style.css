@@ -330,7 +330,7 @@ body {
 
 @media screen and (min-width: 650px) {
   .projects__display .projects__card {
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -340,19 +340,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .projects__display .projects__project {
-    width: 90vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    row-gap: 50px;
   }
   .projects__display .projects__card {
     display: -webkit-box;
@@ -364,6 +352,16 @@ body {
             flex-direction: column;
     width: 100%;
     margin-bottom: 0;
+  }
+  .projects__display .projects__project {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .projects__display .projects__image {
     display: block;
