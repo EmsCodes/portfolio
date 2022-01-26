@@ -19,3 +19,11 @@ $blue-linear-gradient: linear-gradient(
 // FONTS
 $body-text: "roboto-condensed", sans-serif;
 $heading-font: "proxima-nova-extra-condensed", sans-serif;
+
+@media screen and(min-width:1000px) {
+	$blue-linear-gradient: linear-gradient(
+		30deg,
+		rgba(1, 22, 51, 1) 0%,
+		rgba(1, 43, 102, 1) 100%
+	);
+}

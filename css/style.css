@@ -26,6 +26,7 @@ h1 {
   font-size: calc(35px + (100 - 35) * ((100vw - 320px) / (1920 - 320)));
   margin: 0 auto;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -163,6 +164,14 @@ h2 {
 .about ol span {
   color: #f7f6f5;
   font-family: "roboto-condensed", sans-serif;
+}
+
+@media screen and (min-width: 1200px) {
+  .about .about--text {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 
 .menu__social-links-global {
@@ -435,6 +444,7 @@ h2 {
   }
   .projects__display .projects__project {
     width: 100%;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -456,6 +466,10 @@ h2 {
     right: 3%;
     bottom: 0;
   }
+}
+
+.about .about__tag-icon {
+  display: none;
 }
 
 .about .about__images {
@@ -516,7 +530,7 @@ h2 {
   }
   .about .about__images--horisontal {
     display: block;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 35px;
     margin-bottom: 35px;
@@ -541,6 +555,35 @@ h2 {
     -o-object-position: 35% center;
        object-position: 35% center;
     opacity: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about .about--flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .about .about__images--icon {
+    display: none;
+  }
+  .about .about__images--horisontal {
+    width: 85%;
+  }
+  .about .about__tag-icon {
+    display: block;
+    width: 55px;
+    margin: 0 auto;
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
   }
 }
 
@@ -644,7 +687,7 @@ header .social-links {
 .introduction::before {
   content: "";
   position: absolute;
-  background: url("/images/pattern/hexagon-pattern.png");
+  background: url("/images/pattern/hexagon-pattern.svg");
   background-size: cover;
   bottom: 0;
   left: 0;
@@ -670,7 +713,7 @@ header .social-links {
     margin-right: 5%;
     position: relative;
     z-index: 1;
-    margin-top: 20%;
+    margin-top: 25%;
     margin-left: 0;
   }
   .introduction .introduction__text {
