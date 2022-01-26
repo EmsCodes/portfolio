@@ -11,8 +11,10 @@ h4 {
 	font-family: $heading-font;
 }
 h1 {
-	font-size: 2.2em;
-	margin: 0;
+	font-size: calc(35px + (100 - 35) * ((100vw - 320px) / (1920 - 320)));
+	// font-size: 2.2em;
+	margin: 0 auto;
+	white-space: nowrap;
 }
 
 h2 {
@@ -38,6 +40,7 @@ h2::after {
 h2 {
 	display: flex;
 	width: 90%;
+	max-width: 1280px;
 	margin: 0 auto;
 	margin-top: 35px;
 }
@@ -51,11 +54,16 @@ h2 {
 	p:nth-child(1) {
 		font-family: $heading-font;
 		text-align: center;
-		font-size: 1.2em;
+		font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
 	}
 	.introduction--span {
 		margin-right: 5px;
 		color: $peach;
+	}
+	.introduction__description {
+		p {
+			font-size: calc(16px + (25 - 16) * ((100vw - 320px) / (1920 - 320)));
+		}
 	}
 }
 
