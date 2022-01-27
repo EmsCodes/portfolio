@@ -3,12 +3,13 @@ const logo = document.querySelector(".logo");
 
 export function dropDownMenu() {
 	headerNav.classList.toggle("active");
+	headerNav.classList.toggle("menu__main-nav");
 
-	if (headerNav.classList.contains("active")) {
-		logo.src = "images/Logo-dark-blue.png";
-	} else {
-		logo.src = "images/Logo-white.png";
-	}
+	// if (headerNav.classList.contains("active")) {
+	// 	logo.src = "images/Logo-dark-blue.png";
+	// } else {
+	// 	logo.src = "images/Logo-white.png";
+	// }
 }
 
 // closes the menu when clicking a link

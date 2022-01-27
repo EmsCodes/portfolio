@@ -1,25 +1,28 @@
 .projects__display {
-	max-width: 1280px;
-	width: 85%;
+	width: 90%;
 	display: flex;
 	flex-flow: row wrap;
 	margin: 0 auto;
 	margin-top: 25px;
+	justify-content: center;
 
 	a {
 		position: relative;
 		text-decoration: none;
 		z-index: 5;
 	}
-
+	.projects__project {
+		width: 100%;
+	}
 	.projects__card {
+		// opacity: 0;
 		position: relative;
 		background: url("/images/facts-img.jpg");
 		background-size: cover;
 		padding: 25px;
 		display: flex;
 		flex-direction: column;
-		width: 85%;
+		width: 90%;
 		margin: 0 auto;
 		margin-bottom: 30px;
 	}
@@ -31,8 +34,8 @@
 		opacity: 90%;
 	}
 	.projects__description--flexible {
-		margin-bottom: 75px;
-		flex-grow: 1;
+		margin-bottom: 20%;
+		max-width: 400px;
 	}
 	.projects__info {
 		position: absolute;
@@ -59,18 +62,34 @@
 		display: none;
 	}
 }
+.show-card {
+	opacity: 1;
+	animation: slide-in 0.5s ease-in;
+}
 
-@media screen and (min-width: 650px) {
+@keyframes slide-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@media screen and (min-width: 700px) {
 	.projects__display {
 		width: 90%;
 		gap: 20px;
-		justify-content: center;
+		justify-content: start;
+
 		.projects__card {
 			width: 100%;
 			margin-bottom: 0px;
 		}
+		.projects__description--flexible {
+			margin-bottom: 35%;
+		}
 		.projects__project {
-			width: 45%;
+			width: 48%;
 			display: flex;
 			flex-direction: row;
 		}
@@ -84,12 +103,17 @@
 	.projects__display {
 		flex-direction: column;
 		row-gap: 50px;
+		max-width: 1280px;
 
 		.projects__card {
 			display: flex;
+			background: none;
 			flex-direction: column;
-			width: 100%;
+			width: 85%;
 			margin-bottom: 0;
+		}
+		.projects__card::before {
+			opacity: 100%;
 		}
 		.projects__project {
 			width: 100%;
@@ -97,18 +121,33 @@
 			display: flex;
 			flex-direction: row;
 		}
+		.projects__description--flexible {
+			margin-bottom: 100px;
+		}
 		.projects__image {
 			display: block;
 			position: relative;
 			img {
 				width: 100%;
 				height: 100%;
+				object-fit: contain;
 			}
 			p {
 				position: absolute;
 				right: 3%;
 				bottom: 0;
 			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.projects__display {
+		.projects__card {
+			width: 75%;
+		}
+		.projects__description--flexible {
+			margin-bottom: 100px;
 		}
 	}
 }

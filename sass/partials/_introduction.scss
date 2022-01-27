@@ -1,5 +1,6 @@
 .blue-bg {
 	background: $blue-linear-gradient;
+	overflow: hidden;
 }
 
 .introduction {
@@ -64,24 +65,22 @@
 
 @media screen and(min-width:1000px) {
 	.introduction {
-		position: relative;
 		// makes portrait go all the way to the bottom
-		display: flex;
 		flex-direction: row;
 		margin-top: 5%;
 
 		.introduction__portrait {
-			width: 100%;
-			max-width: 30vw;
-			margin-right: 5%;
+			width: 50vw;
+			max-width: 500px;
+			margin-right: 10%;
 			position: relative;
 			z-index: 1;
-			margin-top: 25%;
+			margin-top: 15%;
 			margin-left: 0;
 		}
 		.introduction__text {
 			margin-left: 10%;
-			margin-top: 5%;
+			margin-top: 2%;
 			width: 100%;
 			position: relative;
 			z-index: 1;

@@ -7,12 +7,15 @@ body {
   padding: 0;
   background-color: #f7f6f5;
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   font-family: "roboto-condensed", sans-serif;
   font-weight: 300;
   font-style: normal;
+  font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
 }
 
 h1,
@@ -25,7 +28,6 @@ h4 {
 h1 {
   font-size: calc(35px + (100 - 35) * ((100vw - 320px) / (1920 - 320)));
   margin: 0 auto;
-  white-space: nowrap;
   text-transform: uppercase;
 }
 
@@ -99,10 +101,12 @@ h2 {
   font-size: 1.5em;
   margin: 0;
   text-transform: capitalize;
+  font-size: calc(25px + (35 - 16) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .projects__card .projects__description--peach:first-of-type {
   margin-top: 0;
+  font-size: calc(18px + (25 - 16) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .projects__card .projects__description--peach {
@@ -192,42 +196,67 @@ h2 {
 
 .menu .menu__main-nav {
   position: absolute;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+.menu .active {
+  display: block;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  height: 50vh;
+  height: 65vh;
   z-index: 2;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff7a72), to(#b73e37));
   background: linear-gradient(#ff7a72, #b73e37);
   -webkit-box-shadow: 0px 5px 15px #001333;
           box-shadow: 0px 5px 15px #001333;
+  -webkit-animation: slide-in 0.2s;
+          animation: slide-in 0.2s;
 }
 
-.menu .active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+@-webkit-keyframes slide-in {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
 }
 
 .menu ul {
   padding: 0;
   width: 50%;
   margin: 0 auto;
-  margin-top: 30%;
-  -webkit-transform: translateX(25%);
-          transform: translateX(25%);
+  margin-top: 150px;
+  margin-bottom: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu ul a {
   text-decoration: none;
   color: #f7f6f5;
   font-family: "proxima-nova-extra-condensed", sans-serif;
+  font-weight: 200;
   font-size: 1.8em;
 }
 
@@ -240,12 +269,11 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 45%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
   margin: 0 auto;
-  margin-top: 50px;
 }
 
 .menu .menu__social-links img {
@@ -253,8 +281,9 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  .menu .menu__main-nav {
-    left: 25%;
+  .menu .active {
+    width: 50%;
+    left: 50%;
   }
 }
 
@@ -276,25 +305,26 @@ h2 {
   }
   .menu .menu__main-nav {
     position: static;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    display: block;
+    -webkit-animation: none;
+            animation: none;
     background: none;
     -webkit-box-shadow: none;
             box-shadow: none;
     height: auto;
   }
   .menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
-    margin-top: 7.5%;
+    margin-top: 10%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    font-weight: 300;
   }
   .menu ul a {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .menu li {
     margin-right: 20px;
@@ -307,8 +337,7 @@ h2 {
 }
 
 .projects__display {
-  max-width: 1280px;
-  width: 85%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,12 +347,19 @@ h2 {
           flex-flow: row wrap;
   margin: 0 auto;
   margin-top: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects__display a {
   position: relative;
   text-decoration: none;
   z-index: 5;
+}
+
+.projects__display .projects__project {
+  width: 100%;
 }
 
 .projects__display .projects__card {
@@ -338,7 +374,7 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -352,10 +388,8 @@ h2 {
 }
 
 .projects__display .projects__description--flexible {
-  margin-bottom: 75px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  margin-bottom: 20%;
+  max-width: 400px;
 }
 
 .projects__display .projects__info {
@@ -395,20 +429,38 @@ h2 {
   display: none;
 }
 
-@media screen and (min-width: 650px) {
+.show-card {
+  opacity: 1;
+  -webkit-animation: slide-in 0.5s ease-in;
+          animation: slide-in 0.5s ease-in;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 700px) {
   .projects__display {
     width: 90%;
     gap: 20px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   .projects__display .projects__card {
     width: 100%;
     margin-bottom: 0px;
   }
+  .projects__display .projects__description--flexible {
+    margin-bottom: 35%;
+  }
   .projects__display .projects__project {
-    width: 45%;
+    width: 48%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -430,17 +482,22 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 50px;
+    max-width: 1280px;
   }
   .projects__display .projects__card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    width: 85%;
     margin-bottom: 0;
+  }
+  .projects__display .projects__card::before {
+    opacity: 100%;
   }
   .projects__display .projects__project {
     width: 100%;
@@ -453,6 +510,9 @@ h2 {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .projects__display .projects__description--flexible {
+    margin-bottom: 100px;
+  }
   .projects__display .projects__image {
     display: block;
     position: relative;
@@ -460,11 +520,22 @@ h2 {
   .projects__display .projects__image img {
     width: 100%;
     height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .projects__display .projects__image p {
     position: absolute;
     right: 3%;
     bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__display .projects__card {
+    width: 75%;
+  }
+  .projects__display .projects__description--flexible {
+    margin-bottom: 100px;
   }
 }
 
@@ -613,6 +684,7 @@ header .social-links {
 
 .blue-bg {
   background: linear-gradient(300deg, #011633 0%, #012b66 100%);
+  overflow: hidden;
 }
 
 .introduction {
@@ -697,10 +769,6 @@ header .social-links {
 
 @media screen and (min-width: 1000px) {
   .introduction {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -708,17 +776,17 @@ header .social-links {
     margin-top: 5%;
   }
   .introduction .introduction__portrait {
-    width: 100%;
-    max-width: 30vw;
-    margin-right: 5%;
+    width: 50vw;
+    max-width: 500px;
+    margin-right: 10%;
     position: relative;
     z-index: 1;
-    margin-top: 25%;
+    margin-top: 15%;
     margin-left: 0;
   }
   .introduction .introduction__text {
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 2%;
     width: 100%;
     position: relative;
     z-index: 1;
