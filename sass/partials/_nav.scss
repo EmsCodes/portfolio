@@ -58,6 +58,13 @@
 			font-weight: 200;
 			font-size: 1.8em;
 		}
+		a:hover {
+			border-top: 1px solid $peach;
+			border-bottom: 1px solid $peach;
+		}
+		a:active {
+			color: $peach;
+		}
 	}
 	li {
 		list-style-type: none;

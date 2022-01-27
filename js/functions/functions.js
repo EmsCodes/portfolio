@@ -2,8 +2,12 @@ const headerNav = document.querySelector("nav");
 const logo = document.querySelector(".logo");
 
 export function dropDownMenu() {
-	headerNav.classList.toggle("active");
-	headerNav.classList.toggle("menu__main-nav");
+	if (window.outerWidth <= 999) {
+		headerNav.classList.toggle("active");
+		headerNav.classList.toggle("menu__main-nav");
+	} else {
+		headerNav.remove.classList(".active");
+	}
 
 	// if (headerNav.classList.contains("active")) {
 	// 	logo.src = "images/Logo-dark-blue.png";
@@ -17,5 +21,7 @@ export function dropDownMenu() {
 const navLinks = document.querySelectorAll(".menu__main-nav li a");
 
 navLinks.forEach((link) => {
-	link.addEventListener("click", dropDownMenu);
+	if (window.outerWidth <= 999) {
+		link.addEventListener("click", dropDownMenu);
+	}
 });

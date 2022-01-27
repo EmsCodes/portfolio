@@ -260,6 +260,15 @@ h2 {
   font-size: 1.8em;
 }
 
+.menu ul a:hover {
+  border-top: 1px solid #ff7a72;
+  border-bottom: 1px solid #ff7a72;
+}
+
+.menu ul a:active {
+  color: #ff7a72;
+}
+
 .menu li {
   list-style-type: none;
   margin-bottom: 20px;
