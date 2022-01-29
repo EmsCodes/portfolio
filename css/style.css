@@ -11,6 +11,17 @@ body {
           box-sizing: border-box;
 }
 
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff7a72), to(#b73e37));
+  background: linear-gradient(#ff7a72, #b73e37);
+  margin: 0;
+  padding: 7.5px 0;
+  text-align: center;
+  color: #001333;
+  font-family: "proxima-nova-extra-condensed", sans-serif;
+  font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+
 body {
   font-family: "roboto-condensed", sans-serif;
   font-weight: 300;
@@ -26,7 +37,7 @@ h4 {
 }
 
 h1 {
-  font-size: calc(35px + (100 - 35) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(25px + (70 - 35) * ((100vw - 320px) / (1920 - 320)));
   margin: 0 auto;
   text-transform: uppercase;
 }
@@ -48,11 +59,11 @@ h2::after {
 }
 
 h2::before {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 h2::after {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 h2 {
@@ -170,6 +181,15 @@ h2 {
   font-family: "roboto-condensed", sans-serif;
 }
 
+@media screen and (min-width: 1000px) {
+  h2::before {
+    margin-right: 35px;
+  }
+  h2::after {
+    margin-left: 35px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .about .about--text {
     width: 100%;
@@ -183,12 +203,12 @@ h2 {
 }
 
 .menu {
-  padding-right: 7.5%;
+  margin-right: 5%;
 }
 
 .menu .menu__burger-btn {
   position: relative;
-  z-index: 5;
+  z-index: 11;
   background: none;
   border: none;
   margin-top: 30px;
@@ -207,7 +227,8 @@ h2 {
   right: 0;
   width: 100%;
   height: 65vh;
-  z-index: 2;
+  max-height: 450px;
+  z-index: 10;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff7a72), to(#b73e37));
   background: linear-gradient(#ff7a72, #b73e37);
   -webkit-box-shadow: 0px 5px 15px #001333;
@@ -238,8 +259,8 @@ h2 {
   padding: 0;
   width: 50%;
   margin: 0 auto;
-  margin-top: 150px;
-  margin-bottom: 75px;
+  margin-top: 100px;
+  margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,10 +310,20 @@ h2 {
   width: 50px;
 }
 
+@media screen and (min-width: 500px) {
+  .menu .active {
+    max-height: 550px;
+  }
+  .menu ul {
+    margin-top: 130px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu .active {
     width: 50%;
     left: 50%;
+    max-height: 500px;
   }
 }
 
@@ -307,7 +338,7 @@ h2 {
     z-index: 50;
   }
   .menu {
-    padding-right: 7.5%;
+    padding-right: 0;
   }
   .menu .menu__burger-btn {
     display: none;
@@ -328,12 +359,12 @@ h2 {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 15%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
   .menu ul a {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   .menu li {
     margin-right: 20px;
@@ -383,7 +414,7 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -486,6 +517,7 @@ h2 {
 
 @media screen and (min-width: 1000px) {
   .projects__display {
+    margin-top: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -502,7 +534,7 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 85%;
+    width: 100%;
     margin-bottom: 0;
   }
   .projects__display .projects__card::before {
@@ -520,7 +552,7 @@ h2 {
             flex-direction: row;
   }
   .projects__display .projects__description--flexible {
-    margin-bottom: 100px;
+    margin-bottom: 125px;
   }
   .projects__display .projects__image {
     display: block;
@@ -674,14 +706,14 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  max-width: 100%;
   padding-left: 5%;
 }
 
 header .logo {
   position: relative;
-  z-index: 10;
-  width: 55px;
+  z-index: 11;
+  width: calc(55px + (100 - 55) * ((100vw - 320px) / (1920 - 320)));
   margin-top: 20px;
 }
 
@@ -691,9 +723,44 @@ header .social-links {
   display: flex;
 }
 
+@media screen and (min-width: 1200px) {
+  header .logo {
+    margin-top: 30px;
+  }
+}
+
 .blue-bg {
   background: linear-gradient(300deg, #011633 0%, #012b66 100%);
   overflow: hidden;
+}
+
+h1 {
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+h1 span {
+  -webkit-animation: letter-flip 1s 1;
+          animation: letter-flip 1s 1;
+  -webkit-animation-delay: calc(0.1s * var(--i));
+          animation-delay: calc(0.1s * var(--i));
+  display: inline-block;
+}
+
+@-webkit-keyframes letter-flip {
+  0%,
+  80% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes letter-flip {
+  0%,
+  80% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
 }
 
 .introduction {
@@ -749,7 +816,7 @@ header .social-links {
 
 .introduction .introduction__text {
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   max-width: 500px;
 }
 
@@ -759,10 +826,37 @@ header .social-links {
   display: flex;
   width: 85%;
   margin: 0 auto;
+  max-width: 400px;
+  -webkit-animation: delay 5.7s ease 1;
+          animation: delay 5.7s ease 1;
 }
 
 .introduction .introduction__description p {
   margin-left: 10px;
+}
+
+@-webkit-keyframes delay {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes delay {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .introduction::before {
@@ -778,24 +872,23 @@ header .social-links {
 
 @media screen and (min-width: 1000px) {
   .introduction {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
     margin-top: 5%;
   }
   .introduction .introduction__portrait {
-    width: 50vw;
-    max-width: 500px;
-    margin-right: 10%;
+    width: 35vw;
     position: relative;
     z-index: 1;
-    margin-top: 15%;
+    margin-top: 50%;
     margin-left: 0;
+    margin-right: 100px;
   }
   .introduction .introduction__text {
-    margin-left: 10%;
-    margin-top: 2%;
+    margin-left: 20%;
+    margin-top: 7.5%;
     width: 100%;
     position: relative;
     z-index: 1;

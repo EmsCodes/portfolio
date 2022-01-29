@@ -2,7 +2,21 @@
 	background: $blue-linear-gradient;
 	overflow: hidden;
 }
-
+h1 {
+	letter-spacing: 2px;
+	white-space: nowrap;
+	span {
+		animation: letter-flip 1s 1;
+		animation-delay: calc(0.1s * var(--i));
+		display: inline-block;
+	}
+}
+@keyframes letter-flip {
+	0%,
+	80% {
+		transform: rotateY(360deg);
+	}
+}
 .introduction {
 	position: relative;
 	// makes portrait go all the way to the bottom
@@ -40,15 +54,30 @@
 	}
 	.introduction__text {
 		margin: 0 auto;
-		width: 100%;
+		width: 90%;
 		max-width: 500px;
 	}
 	.introduction__description {
 		display: flex;
 		width: 85%;
 		margin: 0 auto;
+		max-width: 400px;
+		animation: delay 5.7s ease 1;
+
 		p {
 			margin-left: 10px;
+		}
+
+		@keyframes delay {
+			0% {
+				opacity: 0;
+			}
+			50% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
 		}
 	}
 	&::before {
@@ -66,21 +95,20 @@
 @media screen and(min-width:1000px) {
 	.introduction {
 		// makes portrait go all the way to the bottom
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
 		margin-top: 5%;
-
 		.introduction__portrait {
-			width: 50vw;
-			max-width: 500px;
-			margin-right: 10%;
+			width: 35vw;
 			position: relative;
 			z-index: 1;
-			margin-top: 15%;
+			margin-top: 50%;
 			margin-left: 0;
+			margin-right: 100px;
 		}
 		.introduction__text {
-			margin-left: 10%;
-			margin-top: 2%;
+			margin-left: 20%;
+			margin-top: 7.5%;
 			width: 100%;
 			position: relative;
 			z-index: 1;

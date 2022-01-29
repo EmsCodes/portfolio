@@ -1,15 +1,23 @@
 header {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
+	max-width: 100%;
 	padding-left: 5%;
 	.logo {
 		position: relative;
-		z-index: 10;
-		width: 55px;
+		z-index: 11;
+		width: calc(55px + (100 - 55) * ((100vw - 320px) / (1920 - 320)));
 		margin-top: 20px;
 	}
 	.social-links {
 		display: flex;
+	}
+}
+
+@media screen and(min-width:1200px) {
+	header {
+		.logo {
+			margin-top: 30px;
+		}
 	}
 }

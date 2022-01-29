@@ -1,0 +1,9 @@
+footer {
+	background: $peach-linear-gradient;
+	margin: 0;
+	padding: 7.5px 0;
+	text-align: center;
+	color: $dark-blue;
+	font-family: $heading-font;
+	font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+}

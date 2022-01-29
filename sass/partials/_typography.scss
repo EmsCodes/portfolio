@@ -12,8 +12,7 @@ h4 {
 	font-family: $heading-font;
 }
 h1 {
-	font-size: calc(35px + (100 - 35) * ((100vw - 320px) / (1920 - 320)));
-	// font-size: 2.2em;
+	font-size: calc(25px + (70 - 35) * ((100vw - 320px) / (1920 - 320)));
 	margin: 0 auto;
 	text-transform: uppercase;
 }
@@ -32,10 +31,10 @@ h2::after {
 }
 
 h2::before {
-	margin-right: 10px;
+	margin-right: 20px;
 }
 h2::after {
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 h2 {
@@ -142,6 +141,14 @@ h2 {
 			color: $white;
 			font-family: $body-text;
 		}
+	}
+}
+@media screen and(min-width:1000px) {
+	h2::before {
+		margin-right: 35px;
+	}
+	h2::after {
+		margin-left: 35px;
 	}
 }
 
