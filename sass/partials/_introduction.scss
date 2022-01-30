@@ -1,13 +1,12 @@
 .blue-bg {
 	background: $blue-linear-gradient;
-	overflow: hidden;
 }
 h1 {
 	letter-spacing: 2px;
 	white-space: nowrap;
 	span {
 		animation: letter-flip 1s 1;
-		animation-delay: calc(0.1s * var(--i));
+		animation-delay: calc(0.05s * var(--i));
 		display: inline-block;
 	}
 }
@@ -62,7 +61,7 @@ h1 {
 		width: 85%;
 		margin: 0 auto;
 		max-width: 400px;
-		animation: delay 5.7s ease 1;
+		animation: delay 4s ease 1;
 
 		p {
 			margin-left: 10px;
@@ -94,7 +93,6 @@ h1 {
 
 @media screen and(min-width:1000px) {
 	.introduction {
-		// makes portrait go all the way to the bottom
 		display: grid;
 		grid-template-columns: 2fr 1fr;
 		margin-top: 5%;
@@ -112,6 +110,31 @@ h1 {
 			width: 100%;
 			position: relative;
 			z-index: 1;
+		}
+		.introduction__description {
+			display: flex;
+			width: 100%;
+			margin: 0 auto;
+			p {
+				margin-left: 10px;
+			}
+		}
+		&::before {
+			top: 25%;
+		}
+	}
+}
+
+@media screen and(min-width:1400px) {
+	.introduction {
+		.introduction__portrait {
+			width: 40vw;
+			max-width: 600px;
+			margin-right: 150px;
+			margin-top: 30%;
+		}
+		.introduction__text {
+			margin-left: 30%;
 		}
 		.introduction__description {
 			display: flex;

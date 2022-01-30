@@ -6,12 +6,19 @@
 .menu {
 	margin-right: 5%;
 
-	.menu__burger-btn {
+	.menu__burger-btn,
+	.closing-x {
 		position: relative;
 		z-index: 11;
 		background: none;
 		border: none;
 		margin-top: 30px;
+	}
+	.closing-x {
+		display: none;
+		width: 30px;
+		margin-top: 0;
+		margin-right: 20px;
 	}
 
 	// mobile/tablet navigation menu

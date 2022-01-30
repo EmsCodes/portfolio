@@ -12,7 +12,7 @@ h4 {
 	font-family: $heading-font;
 }
 h1 {
-	font-size: calc(25px + (70 - 35) * ((100vw - 320px) / (1920 - 320)));
+	font-size: calc(25px + (70 - 35) * ((100vw - 320px) / (1900 - 320)));
 	margin: 0 auto;
 	text-transform: uppercase;
 }
@@ -54,7 +54,7 @@ h2 {
 	p:nth-child(1) {
 		font-family: $heading-font;
 		text-align: center;
-		font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+		font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1900 - 320)));
 	}
 	.introduction--span {
 		margin-right: 5px;
@@ -62,7 +62,7 @@ h2 {
 	}
 	.introduction__description {
 		p {
-			font-size: calc(16px + (25 - 16) * ((100vw - 320px) / (1920 - 320)));
+			font-size: calc(16px + (25 - 16) * ((100vw - 320px) / (1900 - 320)));
 		}
 	}
 }
@@ -80,7 +80,7 @@ h2 {
 		font-size: 1.5em;
 		margin: 0;
 		text-transform: capitalize;
-		font-size: calc(25px + (35 - 16) * ((100vw - 320px) / (1920 - 320)));
+		font-size: calc(25px + (28 - 16) * ((100vw - 320px) / (1920 - 320)));
 	}
 	.projects__description--peach:first-of-type {
 		margin-top: 0;
@@ -144,6 +144,9 @@ h2 {
 	}
 }
 @media screen and(min-width:1000px) {
+	h2 {
+		margin-top: 50px;
+	}
 	h2::before {
 		margin-right: 35px;
 	}
