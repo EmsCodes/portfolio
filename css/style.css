@@ -901,6 +901,7 @@ h1 span {
     -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
     margin-top: 5%;
+    margin-right: 0%;
   }
   .introduction .introduction__portrait {
     width: 35vw;
