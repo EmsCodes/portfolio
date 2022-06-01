@@ -1,320 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Portfolio site for front-end developer Endre Makra-Stenkløv"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-			crossorigin="anonymous"
-		/>
-    <link rel="stylesheet" href="https://use.typekit.net/dja7ssr.css">
-		<link rel="stylesheet" href="css/style.css" />
-		<title>Portfolio | Endre Makra-Stenkløv</title>
-	</head>
-	<body>
-    <div class="blue-bg">
-		<header>
-			<a href="index.html"
-				><img class="logo" src="images/Logo-white.png" alt="EMS logo"
-			/></a>
-      <div class="menu">
-        <button class="menu__burger-btn" aria-label="burger menu">
-          <img class="burger-icon"src="/images/icons/burger-menu.svg" alt="burger-menu" aria-hidden="true">
-          <img class="closing-x"src="/images/icons/cross.svg" alt="closing X" aria-hidden="true">
-        </button>
-        <nav class="menu__main-nav">
-          <ul>
-            <li><a href="#projects">0. Projects</a></li>
-            <li><a href="#about">1. About me</a></li>
-            <li><a href="mailto:endrestk@gmail.com">2. Contact</a></li>
-          </ul>
-          <div class="menu__social-links" aria-label="social links">
-            <div class="social-links__github">
-              <a href="https://github.com/EmsCodes">
-                <p class="sr-only">GitHub account link</p>
-                <img
-                  class="social-links--styling"
-                  src="/images/icons/github-dark-blue.svg"
-                  alt="github icon"
-                  aria-hidden="true"
-                />
-              </a>
-            </div>
-            <div class="social-links__linkedin">
-              <a href="https://www.linkedin.com/in/endre-makra-stenkl%C3%B8v/" aria-label="linkedIn link">
-                <p class="sr-only">LinkedIn account link</p>
-                <img
-                  class="social-links--styling"
-                  src="/images/icons/linkedIn-dark-blue.svg"
-                  alt="linkedIn icon"
-                  aria-hidden="true"
-                />
-              </a>
-            </div>
-            <div class="social-links__contact">
-              <a href="mailto:endrestk@gmail.com">
-                <p class="sr-only">Contact link</p>
-                <img
-                  class="social-links--styling"
-                  src="/images/icons/contact-dark-blue.svg"
-                  alt="mail icon"
-                  aria-hidden="true"
 
-                />
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<meta name="description"
+		content="Portfolio site for front-end developer Endre Makra-Stenkløv" />
+	<link rel="stylesheet"
+		href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+		crossorigin="anonymous" />
+	<link rel="stylesheet"
+		href="https://use.typekit.net/dja7ssr.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<title>Portfolio | Endre Makra-Stenkløv
+	</title>
+</head>
+
+<body>
+	<div class="blue-bg">
+		<header>
+			<a href="index.html"><img class="logo"
+					src="images/Logo-white.png"
+					alt="EMS logo" /></a>
+			<div class="menu">
+				<button class="menu__burger-btn"
+					aria-label="burger menu">
+					<img class="burger-icon"
+						src="/images/icons/burger-menu.svg"
+						alt="burger-menu"
+						aria-hidden="true">
+					<img class="closing-x"
+						src="/images/icons/cross.svg"
+						alt="closing X"
+						aria-hidden="true">
+				</button>
+				<nav class="menu__main-nav">
+					<ul>
+						<li><a href="#projects">0.
+								Projects</a></li>
+						<li><a href="#about">1.
+								About me</a></li>
+						<li><a
+								href="mailto:endrestk@gmail.com">2.
+								Contact</a></li>
+					</ul>
+					<div class="menu__social-links"
+						aria-label="social links">
+						<div
+							class="social-links__github">
+							<a
+								href="https://github.com/EmsCodes">
+								<p
+									class="sr-only">
+									GitHub account
+									link</p>
+								<img class="social-links--styling"
+									src="/images/icons/github-dark-blue.svg"
+									alt="github icon"
+									aria-hidden="true" />
+							</a>
+						</div>
+						<div
+							class="social-links__linkedin">
+							<a href="https://www.linkedin.com/in/endre-makra-stenkl%C3%B8v/"
+								aria-label="linkedIn link">
+								<p
+									class="sr-only">
+									LinkedIn
+									account link
+								</p>
+								<img class="social-links--styling"
+									src="/images/icons/linkedIn-dark-blue.svg"
+									alt="linkedIn icon"
+									aria-hidden="true" />
+							</a>
+						</div>
+						<div
+							class="social-links__contact">
+							<a
+								href="mailto:endrestk@gmail.com">
+								<p
+									class="sr-only">
+									Contact link
+								</p>
+								<img class="social-links--styling"
+									src="/images/icons/contact-dark-blue.svg"
+									alt="mail icon"
+									aria-hidden="true" />
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
 		</header>
 		<main>
-      <!-- Introduction -->
+			<!-- Introduction -->
 			<section class="introduction">
-					<div class="introduction__text">
-						<p><span class="introduction--span">Hello, world! </span> My name is</p>
+				<div class="introduction__text">
+					<p><span
+							class="introduction--span">Hello,
+							world! </span> My name
+						is</p>
 					<h1>
-						<span style="--i:1">E</span><span style="--i:2">n</span><span style="--i:3">d</span><span style="--i:4">r</span><span style="--i:5">e</span>
-						<span style="--i:6"> M</span><span style="--i:7">a</span><span style="--i:8">k</span><span style="--i:9">r</span><span style="--i:10">a</span><span style="--i:11">-</span><span style="--i:12">S</span><span style="--i:13">t</span><span style="--i:14">e</span><span style="--i:15">n</span><span style="--i:16">k</span><span style="--i:17">l</span><span style="--i:18">ø</span><span style="--i:19">v</span>
+						<span
+							style="--i:1">E</span><span
+							style="--i:2">n</span><span
+							style="--i:3">d</span><span
+							style="--i:4">r</span><span
+							style="--i:5">e</span>
+						<span style="--i:6">
+							M</span><span
+							style="--i:7">a</span><span
+							style="--i:8">k</span><span
+							style="--i:9">r</span><span
+							style="--i:10">a</span><span
+							style="--i:11">-</span><span
+							style="--i:12">S</span><span
+							style="--i:13">t</span><span
+							style="--i:14">e</span><span
+							style="--i:15">n</span><span
+							style="--i:16">k</span><span
+							style="--i:17">l</span><span
+							style="--i:18">ø</span><span
+							style="--i:19">v</span>
 					</h1>
-					<div class="introduction__description">
-						<img
-							src="/images/icons/tag-icon.svg"
-							alt="peach-coloured closing tag icon"
-						/>
+					<div
+						class="introduction__description">
+						<img src="/images/icons/tag-icon.svg"
+							alt="peach-coloured closing tag icon" />
 						<p>
-							A <span class="introduction--span">front-end developer</span>student
-							with focus on design and user-friendly solutions.
+							A <span
+								class="introduction--span">front-end
+								developer</span>student
+							with focus on design
+							and user-friendly
+							solutions.
 						</p>
-					</div>
-					</div>
-					<img
-						class="introduction__portrait"
-						src="/images/coloured-portrait.png"
-						alt="blue and peach portrait of Endre Makra-Stenkløv with the word - designer - in blue and the word developer in peach next to it."
-					/>
-			</section>
-    </div>
-      <!-- Projects -->
-			<section id="projects" class="projects">
-				<h2>Projects</h2>
-        <div class="projects__display"> 
-					<div class="projects__project">
-						<a href="" target="_blank">
-							<div class="projects__card bg-ecommerce">
-									<h3>Shoe ecommerce</h3>
-									<p class="projects__description--peach">Semester-project</p>
-									<div class="projects__description--flexible">
-										<p>
-											The task was to make an ecommerce shoe store using Strap, we also had to use Sass.
-										</p>
-										<p>
-											The site needed to have a login for admin, where the user could add, edit or delete a product.
-											On the customer side, it had to be possible to add or remove items from a shopping-cart, and the cart needed to show total price.
-										</p>
-									</div>
-									<div class="projects__info">
-										<div class="projects__display--technologies">
-											<p class="projects__description--peach">HTML, CSS/Sass, JS, Strapi, Bootstrap</p>
-										</div>
-										<div class="projects__icons">
-											<a href="https://github.com/EmsCodes/SP2-Shoe-ecommerce">
-												<p class="sr-only">GitHub account link</p>
-												<img
-													class="projects__icons--styling"
-													src="/images/icons/github-icon.svg"
-													alt="github icon"
-												/>
-											</a>
-											<a href="" aria-hidden="true">
-												<img
-													class="projects__icons--styling"
-													src="/images/icons/link-icon.svg"
-													alt="link icon"
-													aria-hidden="true"
-												/>
-											</a>
-										</div>
-								</div>
-							</div>
-						</a>
-							<div class="projects__image">
-								<img
-									src="/images/devices-portfolio.png"
-									alt="ipad, mobile, mac and macbook pro with an image of the websites homepage"
-								/>
-								<p>Designed by<a href="https://www.freepik.com/"> Freepik</a></p>
-							</div>
-					</div>
-					<div class="projects__project">
-						<div class="projects__image">
-							<img
-								src="/images/thebean-devices.png"
-								alt="ipad, mobile, mac and macbook pro with an image of the websites homepage"
-							/>
-							<p>Designed by<a href="https://www.freepik.com/"> Freepik</a></p>
-						</div>
-						<a href="https://thebean.netlify.app/" target="_blank">
-							<div class="projects__card bg-thebean">
-									<h3>Coffee blog</h3>
-									<p class="projects__description--peach">Project exam</p>
-									<p class="projects__description--flexible">
-										The task was to make a blog of our choice. I chose a coffee-blog. 
-										I had to create a headless cms for creating posts, using Wordpress.
-										
-									</p>
-									<div class="projects__info">
-										<div class="projects__display--technologies">
-											<p class="projects__description--peach">HTML, CSS, JS, Wordpress</p>
-										</div>
-										<div class="projects__icons">
-											<a href="https://github.com/EmsCodes/theBean">
-												<p class="sr-only">GitHub account link</p>
-												<img
-													class="projects__icons--styling"
-													src="/images/icons/github-icon.svg"
-													alt="github icon"
-												/>
-											</a>
-											<a href="https://thebean.netlify.app/" aria-hidden="true">
-												<img
-													class="projects__icons--styling"
-													src="/images/icons/link-icon.svg"
-													alt="link icon"
-													aria-hidden="true"
-												/>
-											</a>
-										</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="projects__project">
-						<a href="https://csm-museum.netlify.app/" target="_blank" >
-							<div class="projects__card bg-csm">
-									<h3>Community science museum</h3>
-									<p class="projects__description--peach">Semester-project</p>
-									<p class="projects__description--flexible">
-										For our first semester-project the task was to create a site for a community science museum.
-									</p>
-									<div class="projects__info">
-										<div class="projects__display--technologies">
-											<p class="projects__description--peach">HTML, CSS</p>
-										</div>
-										<div class="projects__icons">
-											<a href="https://github.com/EmsCodes/CSM">
-												<p class="sr-only">GitHub account link</p>
-												<img
-													class="projects__icons--styling"
-													src="/images/icons/github-icon.svg"
-													alt="github icon"
-												/>
-											</a>
-											<a href="https://csm-museum.netlify.app/" aria-hidden="true">
-												<img
-													class="projects__icons--styling"
-													src="/images/icons/link-icon.svg"
-													alt="link icon"
-													aria-hidden="true"
-												/>
-											</a>
-										</div>
-								</div>
-							</div>
-						</a>
-							<div class="projects__image">
-								<img
-									src="/images/csm-devices.png"
-									alt="ipad, mobile, mac and macbook pro with an image of the websites homepage"
-								/>
-								<p>Designed by<a href="https://www.freepik.com/"> Freepik</a></p>
-							</div>
-					</div>
-							
-      	</div>  
-			</section>
-      <!-- About -->
-			<section id="about" class="about">
-				<h2>The developer</h2>
-				<div class="about--flex-container">
-					<div class="about--text">
-						<p>
-							
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-							nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-							sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-							rebum. Stet clita kasd gubergren.
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-							nonumy eirmod tempor invidunt.
-						</p>
-					</div>
-					<div class="about__images">
-						<img
-							class="about__images--icon"
-							src="/images/icons/tag-icon.svg"
-							alt="peach coloured closing tag, used in coding"
-						/>
-						<img
-							class="about__images--collection"
-							src="/images/image-collection.svg"
-							alt="collection of images to show some of Endre Makra-Stenkløvs interests and life. Him and his wife, with his cat, a chess-board, pokemon and latte-art."
-						/>
-						<img
-							class="about__images--horisontal"
-							src="/images/horisontal-img-collection.svg"
-							alt="collection of images to show some of Endre Makra-Stenkløvs interests and life. Him and his wife, with his cat, a chess-board, pokemon and latte-art."
-						/>
-						<img
-							class="about__images--icon"
-							src="/images/icons/tag-icon.svg"
-							alt="peach coloured closing tag, used in coding"
-						/>
 					</div>
 				</div>
-				<img
-							class="about__tag-icon"
-							src="/images/icons/tag-icon.svg"
-							alt="peach coloured closing tag, used in coding"
-						/>
-				<div class="facts">
-					<div class="facts--wrapper">
-						<div class="facts--text">
-							<p>Learn more about me!</p>
-							<h4>Ten quick facts</h4>
-							<ol>
-								<li><span>Two cats, Marshmallow and Mr.Monk</span></li>
-								<li><span>Movies: Paddington and John Wick</span></li>
-								<li><span>Met my wife 14 years ago, in high school</span></li>
-								<li><span>Introvert, but don't hate people</span></li>
-								<li><span>I love coffee, and used to work as a barista</span></li>
-								<li><span>Pepsi-max not Cola</span></li>
-								<li><span>Older sister and brother</span></li>
-								<li><span>Born in Bodø, lived in Sortland most of my life</span></li>
-								<li><span>Feminist</span></li>
-								<li><span>Can count to at least 10</span></li>
-							</ol>
+				<img class="introduction__portrait"
+					src="/images/coloured-portrait.png"
+					alt="blue and peach portrait of Endre Makra-Stenkløv with the word - designer - in blue and the word developer in peach next to it." />
+			</section>
+	</div>
+	<!-- Projects -->
+	<section id="projects" class="projects">
+		<h2>Projects</h2>
+		<div class="projects__display">
+			<div class="projects__project">
+				<a href="" target="_blank">
+					<div
+						class="projects__card bg-ecommerce">
+						<h3>Shoe ecommerce</h3>
+						<p
+							class="projects__description--peach">
+							Semester-project</p>
+						<div
+							class="projects__description--flexible">
+							<p>
+								The task was to
+								make an ecommerce
+								shoe store using
+								Strap, we also had
+								to use Sass.
+							</p>
+							<p>
+								The site needed to
+								have a login for
+								admin, where the
+								user could add,
+								edit or delete a
+								product.
+								On the customer
+								side, it had to be
+								possible to add or
+								remove items from
+								a shopping-cart,
+								and the cart
+								needed to show
+								total price.
+							</p>
+						</div>
+						<div
+							class="projects__info">
+							<div
+								class="projects__display--technologies">
+								<p
+									class="projects__description--peach">
+									HTML,
+									CSS/Sass, JS,
+									Strapi,
+									Bootstrap</p>
+							</div>
+							<div
+								class="projects__icons">
+								<a
+									href="https://github.com/EmsCodes/SP2-Shoe-ecommerce">
+									<p
+										class="sr-only">
+										GitHub
+										account
+										link</p>
+									<img class="projects__icons--styling"
+										src="/images/icons/github-icon.svg"
+										alt="github icon" />
+								</a>
+								<a href=""
+									aria-hidden="true">
+									<img class="projects__icons--styling"
+										src="/images/icons/link-icon.svg"
+										alt="link icon"
+										aria-hidden="true" />
+								</a>
+							</div>
 						</div>
 					</div>
-					<div class="facts--img">
-						<img class="facts__img" src="/images/facts-img.jpg" alt="Endre Makra-Stenkløv in a blue suit standing next to his wife in a white dress on their wedding day" class="wedding-img">
-					</div>
+				</a>
+				<div class="projects__image">
+					<img src="/images/devices-portfolio.png"
+						alt="ipad, mobile, mac and macbook pro with an image of the websites homepage" />
+					<p>Designed by<a
+							href="https://www.freepik.com/">
+							Freepik</a></p>
 				</div>
-			</section>
-		</main>
-    <!-- Footer -->
-		<footer>
-			<p>&copy2022 Endre Makra-Stenkløv</p>
-		</footer>
-    <script src="/js/script.js" type="module"></script>
-	</body>
+			</div>
+			<div class="projects__project">
+				<a href="" target="_blank">
+					<div
+						class="projects__card bg-ecommerce">
+						<h3>Shoe ecommerce</h3>
+						<p
+							class="projects__description--peach">
+							Semester-project</p>
+						<div
+							class="projects__description--flexible">
+							<p>
+								The task was to
+								make an ecommerce
+								shoe store using
+								Strap, we also had
+								to use Sass.
+							</p>
+							<p>
+								The site needed to
+								have a login for
+								admin, where the
+								user could add,
+								edit or delete a
+								product.
+								On the customer
+								side, it had to be
+								possible to add or
+								remove items from
+								a shopping-cart,
+								and the cart
+								needed to show
+								total price.
+							</p>
+						</div>
+						<div
+							class="projects__info">
+							<div
+								class="projects__display--technologies">
+								<p
+									class="projects__description--peach">
+									HTML,
+									CSS/Sass, JS,
+									Strapi,
+									Bootstrap</p>
+							</div>
+							<div
+								class="projects__icons">
+								<a
+									href="https://github.com/EmsCodes/SP2-Shoe-ecommerce">
+									<p
+										class="sr-only">
+										GitHub
+										account
+										link</p>
+									<img class="projects__icons--styling"
+										src="/images/icons/github-icon.svg"
+										alt="github icon" />
+								</a>
+								<a href=""
+									aria-hidden="true">
+									<img class="projects__icons--styling"
+										src="/images/icons/link-icon.svg"
+										alt="link icon"
+										aria-hidden="true" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</a>
+				<div class="projects__image">
+					<img src="/images/devices-portfolio.png"
+						alt="ipad, mobile, mac and macbook pro with an image of the websites homepage" />
+					<p>Designed by<a
+							href="https://www.freepik.com/">
+							Freepik</a></p>
+				</div>
+			</div>
+			<div class="projects__project">
+				<div class="projects__image">
+					<img src="/images/thebean-devices.png"
+						alt="ipad, mobile, mac and macbook pro with an image of the websites homepage" />
+					<p>Designed by<a
+							href="https://www.freepik.com/">
+							Freepik</a></p>
+				</div>
+				<a href="https://thebean.netlify.app/"
+					target="_blank">
+					<div
+						class="projects__card bg-thebean">
+						<h3>Coffee blog</h3>
+						<p
+							class="projects__description--peach">
+							Project exam</p>
+						<p
+							class="projects__description--flexible">
+							The task was to make a
+							blog of our choice. I
+							chose a coffee-blog.
+							I had to create a
+							headless cms for
+							creating posts, using
+							Wordpress.
+
+						</p>
+						<div
+							class="projects__info">
+							<div
+								class="projects__display--technologies">
+								<p
+									class="projects__description--peach">
+									HTML, CSS, JS,
+									Wordpress</p>
+							</div>
+							<div
+								class="projects__icons">
+								<a
+									href="https://github.com/EmsCodes/theBean">
+									<p
+										class="sr-only">
+										GitHub
+										account
+										link</p>
+									<img class="projects__icons--styling"
+										src="/images/icons/github-icon.svg"
+										alt="github icon" />
+								</a>
+								<a href="https://thebean.netlify.app/"
+									aria-hidden="true">
+									<img class="projects__icons--styling"
+										src="/images/icons/link-icon.svg"
+										alt="link icon"
+										aria-hidden="true" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="projects__project">
+				<a href="https://csm-museum.netlify.app/"
+					target="_blank">
+					<div
+						class="projects__card bg-csm">
+						<h3>Community science
+							museum</h3>
+						<p
+							class="projects__description--peach">
+							Semester-project</p>
+						<p
+							class="projects__description--flexible">
+							For our first
+							semester-project the
+							task was to create a
+							site for a community
+							science museum.
+						</p>
+						<div
+							class="projects__info">
+							<div
+								class="projects__display--technologies">
+								<p
+									class="projects__description--peach">
+									HTML, CSS</p>
+							</div>
+							<div
+								class="projects__icons">
+								<a
+									href="https://github.com/EmsCodes/CSM">
+									<p
+										class="sr-only">
+										GitHub
+										account
+										link</p>
+									<img class="projects__icons--styling"
+										src="/images/icons/github-icon.svg"
+										alt="github icon" />
+								</a>
+								<a href="https://csm-museum.netlify.app/"
+									aria-hidden="true">
+									<img class="projects__icons--styling"
+										src="/images/icons/link-icon.svg"
+										alt="link icon"
+										aria-hidden="true" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</a>
+				<div class="projects__image">
+					<img src="/images/csm-devices.png"
+						alt="ipad, mobile, mac and macbook pro with an image of the websites homepage" />
+					<p>Designed by<a
+							href="https://www.freepik.com/">
+							Freepik</a></p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- About -->
+	<section id="about" class="about">
+		<h2>The developer</h2>
+		<div class="about--flex-container">
+			<div class="about--text">
+				<p>
+
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet,
+					consetetur sadipscing elitr,
+					sed diam
+					nonumy eirmod tempor invidunt
+					ut labore et dolore magna
+					aliquyam erat,
+					sed diam voluptua. At vero eos
+					et accusam et justo duo
+					dolores et ea
+					rebum. Stet clita kasd
+					gubergren.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet,
+					consetetur sadipscing elitr,
+					sed diam
+					nonumy eirmod tempor invidunt.
+				</p>
+			</div>
+			<div class="about__images">
+				<img class="about__images--icon"
+					src="/images/icons/tag-icon.svg"
+					alt="peach coloured closing tag, used in coding" />
+				<img class="about__images--collection"
+					src="/images/image-collection.svg"
+					alt="collection of images to show some of Endre Makra-Stenkløvs interests and life. Him and his wife, with his cat, a chess-board, pokemon and latte-art." />
+				<img class="about__images--horisontal"
+					src="/images/horisontal-img-collection.svg"
+					alt="collection of images to show some of Endre Makra-Stenkløvs interests and life. Him and his wife, with his cat, a chess-board, pokemon and latte-art." />
+				<img class="about__images--icon"
+					src="/images/icons/tag-icon.svg"
+					alt="peach coloured closing tag, used in coding" />
+			</div>
+		</div>
+		<img class="about__tag-icon"
+			src="/images/icons/tag-icon.svg"
+			alt="peach coloured closing tag, used in coding" />
+		<div class="facts">
+			<div class="facts--wrapper">
+				<div class="facts--text">
+					<p>Learn more about me!</p>
+					<h4>Ten quick facts</h4>
+					<ol>
+						<li><span>Two cats,
+								Marshmallow and
+								Mr.Monk</span>
+						</li>
+						<li><span>Movies:
+								Paddington and
+								John Wick</span>
+						</li>
+						<li><span>Met my wife 14
+								years ago, in high
+								school</span></li>
+						<li><span>Introvert, but
+								don't hate
+								people</span></li>
+						<li><span>I love coffee,
+								and used to work
+								as a
+								barista</span>
+						</li>
+						<li><span>Pepsi-max not
+								Cola</span></li>
+						<li><span>Older sister and
+								brother</span>
+						</li>
+						<li><span>Born in Bodø,
+								lived in Sortland
+								most of my
+								life</span></li>
+						<li><span>Feminist</span>
+						</li>
+						<li><span>Can count to at
+								least 10</span>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<div class="facts--img">
+				<img class="facts__img"
+					src="/images/facts-img.jpg"
+					alt="Endre Makra-Stenkløv in a blue suit standing next to his wife in a white dress on their wedding day"
+					class="wedding-img">
+			</div>
+		</div>
+	</section>
+	</main>
+	<!-- Footer -->
+	<footer>
+		<p>&copy2022 Endre Makra-Stenkløv</p>
+	</footer>
+	<script src="/js/script.js"
+		type="module"></script>
+</body>
+
 </html>
