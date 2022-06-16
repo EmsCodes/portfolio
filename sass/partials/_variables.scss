@@ -4,16 +4,17 @@ $white: #f7f6f5;
 $dark-blue: #001333;
 $peach: #ff7a72;
 $grey: #515151;
+$hexagon-size: 100px;
 
 $peach-linear-gradient: linear-gradient(
-	rgba(255, 122, 114, 100%),
-	rgba(183, 62, 55, 100%)
+  rgba(255, 122, 114, 100%),
+  rgba(183, 62, 55, 100%)
 );
 
 $blue-linear-gradient: linear-gradient(
-	300deg,
-	rgba(1, 22, 51, 1) 0%,
-	rgba(1, 43, 102, 1) 100%
+  300deg,
+  rgba(1, 22, 51, 1) 0%,
+  rgba(1, 43, 102, 1) 100%
 );
 
 // FONTS
@@ -21,9 +22,9 @@ $body-text: "roboto-condensed", sans-serif;
 $heading-font: "proxima-nova-extra-condensed", sans-serif;
 
 @media screen and(min-width:1000px) {
-	$blue-linear-gradient: linear-gradient(
-		30deg,
-		rgba(1, 22, 51, 1) 0%,
-		rgba(1, 43, 102, 1) 100%
-	);
+  $blue-linear-gradient: linear-gradient(
+    30deg,
+    rgba(1, 22, 51, 1) 0%,
+    rgba(1, 43, 102, 1) 100%
+  );
 }
