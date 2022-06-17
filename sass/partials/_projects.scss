@@ -6,6 +6,18 @@
   margin-top: 25px;
   justify-content: center;
 
+  .js-scroll {
+    transform: translateX(-100vw);
+    opacity: 0;
+    transition: transform 0.7s;
+  }
+
+  .js-scroll.scrolled {
+    opacity: 1;
+    transform: translateX(0);
+    animation: opacity 0.5s 0.5s ease-in;
+  }
+
   a {
     position: relative;
     text-decoration: none;
