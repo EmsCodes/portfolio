@@ -33,18 +33,18 @@ h1 {
 }
 
 .hexagons div:nth-child(1) {
-  left: 25%;
-  width: 80px;
-  height: 80px;
-  animation-delay: 0s;
-}
-
-.hexagons div:nth-child(2) {
   left: 10%;
   width: 20px;
   height: 20px;
   animation-delay: 2s;
-  animation-duration: 12s;
+  animation-duration: 15s;
+}
+
+.hexagons div:nth-child(2) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
 }
 
 .hexagons div:nth-child(3) {
@@ -52,6 +52,7 @@ h1 {
   width: 100px;
   height: 100px;
   animation-delay: 4s;
+  background: $main-blue;
 }
 
 .hexagons div:nth-child(4) {
@@ -64,9 +65,10 @@ h1 {
 
 .hexagons div:nth-child(5) {
   left: 65%;
-  width: 20px;
-  height: 20px;
+  width: 45px;
+  height: 45px;
   animation-delay: 0s;
+  background: $main-blue;
 }
 
 .hexagons div:nth-child(6) {
@@ -78,25 +80,27 @@ h1 {
 
 .hexagons div:nth-child(7) {
   left: 35%;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   animation-delay: 7s;
 }
 
 .hexagons div:nth-child(8) {
   left: 50%;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   animation-delay: 15s;
   animation-duration: 35s;
+  background: $main-blue;
 }
 
 .hexagons div:nth-child(9) {
   left: 20%;
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   animation-delay: 2s;
   animation-duration: 25s;
+  background: $main-blue;
 }
 
 .hexagons div:nth-child(10) {
@@ -105,6 +109,7 @@ h1 {
   height: 95px;
   animation-delay: 0s;
   animation-duration: 12s;
+  background: $main-blue;
 }
 
 @keyframes animate {
