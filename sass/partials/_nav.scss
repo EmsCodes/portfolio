@@ -122,6 +122,8 @@
   }
   .menu {
     padding-right: 0;
+    position: relative;
+    z-index: 10;
 
     .menu__burger-btn {
       display: none;
@@ -134,6 +136,7 @@
       background: none;
       box-shadow: none;
       height: auto;
+      z-index: 10;
     }
 
     ul {
@@ -141,6 +144,7 @@
       width: 100%;
       margin-top: 15%;
       transform: translateX(0%);
+
       a {
         font-size: 1.4em;
         color: $white;

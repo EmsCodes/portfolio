@@ -302,6 +302,8 @@ h2 {
 
   .menu {
     padding-right: 0;
+    position: relative;
+    z-index: 10;
   }
   .menu .menu__burger-btn {
     display: none;
@@ -314,6 +316,7 @@ h2 {
     background: none;
     box-shadow: none;
     height: auto;
+    z-index: 10;
   }
   .menu ul {
     flex-direction: row;
